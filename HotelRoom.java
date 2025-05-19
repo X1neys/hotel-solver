@@ -20,6 +20,10 @@ public abstract class HotelRoom {
         this.ratePerNight = ratePerNight;
     }
 
+    public void cancelRoom(int index) {
+        this.isAvailable = true;
+    }
+
     public abstract double calculatePrice(int nights, boolean isMember);
 
     public abstract boolean checkRoomAvailability(int roomIndex);
